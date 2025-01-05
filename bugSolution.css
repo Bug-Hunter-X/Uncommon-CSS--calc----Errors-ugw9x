@@ -1,0 +1,16 @@
+/* Correct usage of calc() */
+.example {
+  width: calc(100% - 20px);
+  height: calc(50vh + 100px);
+  margin: calc((100vw - 500px) / 2);
+}
+
+/* Incorrect usage - unit incompatibility */
+/*.example {
+  width: calc(100px + 50%); /* Incorrect: Mixing px and % */
+}*/
+
+/* Incorrect usage - missing spaces */
+/*.example {
+  width: calc(100px+50%);  /* Incorrect: Missing space around + */
+}*/
